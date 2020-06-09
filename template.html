@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <!-- social start -->
+    <!-- social end -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body class="show-help">
+    <input id="fileinputref" type="file" style="display: none;" />
+
+    <div class="container">
+      <div id="instructions">
+        <div class="space"></div>
+        <div></div>
+        <!-- instructions start -->
+        <!-- instructions end -->
+      </div>
+    </div>
+
+    <!-- alphabet -->
+    <canvas id="alphabetref" style="display: none;"></canvas>
+
+    <!-- layout -->
+    <div class="space"></div>
+    <div class="container">
+      <div>
+        <button class="instruction" data-trigger="p">p</button> save as png&nbsp; <button class="instruction" data-trigger="w">w</button> save as
+        JSON&nbsp; <button class="instruction" data-trigger="o">o</button> load JSON&nbsp; <button class="instruction" data-trigger="?">?</button> toggle
+        help
+      </div>
+    </div>
+    <div class="space"></div>
+    <div class="container outline">
+      <div id="layouttitleref" class="title">Layout</div>
+      <canvas id="cref" style="width: 640px; height: 400px;"></canvas>
+    </div>
+    <div class="container">
+      <div style="display: flex; justify-content: space-between;">
+        <div style="display: flex;">
+          <div id="readleftref"></div>
+          <div id="attachref">a</div>
+        </div>
+        <div id="readrightref">80x25</div>
+      </div>
+    </div>
+    <div class="space"></div>
+
+    <!-- input -->
+    <div class="container outline">
+      <div id="texttitleref" class="title">Text</div>
+      <textarea id="inputref"></textarea>
+    </div>
+    <div class="space"></div>
+    <div
+      class="container"
+      style="display: flex; justify-content: space-between;"
+    >
+      <div>
+        <a target="_blank" href="https://constraint.systems"
+          >constraint.systems</a
+        >
+      </div>
+      <div>
+        <a target="_blank" href="https://github.com/constraint-systems/span"
+          >view source</a
+        >
+      </div>
+    </div>
+    <div class="space"></div>
+  </body>
+  <script src="chroma.js"></script>
+  <script src="bundle.js"></script>
+</html>
