@@ -69,16 +69,7 @@ function keyAction(key, e) {
       $print.toBlob(function(blob) {
         link.setAttribute(
           'download',
-          'span-' +
-            new Date()
-              .toISOString()
-              .slice(0, -4)
-              .replace(/-/g, '')
-              .replace(/:/g, '')
-              .replace(/_/g, '')
-              .replace(/\./g, '') +
-            'Z' +
-            '.png'
+          'span-' + Math.round(new Date().getTime() / 1000) + '.png'
         )
         link.setAttribute('href', URL.createObjectURL(blob))
         link.dispatchEvent(
