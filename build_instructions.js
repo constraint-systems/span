@@ -25,7 +25,7 @@ let b = (value, trigger = null) => {
 let l = (content, label) => `${content} - ${label}`
 
 let content = `
-<div>${description}</div>
+<div style="user-select: text;">${description}</div>
 <div class="hspace"></div>
 <div>
   Controls - show
@@ -136,6 +136,7 @@ let social_content = `
   <meta name="description" content="${description}" />
   <meta name="og:title" content="${title}" />
   <meta name="og:description" content="${description}" />
+  <meta property="og:image" content="https://span.constraint.systems/span.png">
   <meta name="og:url" content="${url}" />
   <meta name="twitter:card" content="summary_large_image" />
 `

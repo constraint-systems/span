@@ -791,8 +791,8 @@ function renderHelp() {
 
 // render end
 
-  // extra theme = light
-  let themes = ['dark', 'outline', 'grad', 'bare', '3d']
+  // extra themes = light, 3d
+  let themes = ['dark', 'outline', 'grad', 'bare']
   let $theme_list = themes
     .map(t => `<div id="theme-${t}"><span>${t}</span></div>`)
     .join('\n')
@@ -803,30 +803,32 @@ function renderHelp() {
   state.global_mode = 'layout'
   state.mode = 'move'
   state.text =
-    "Introducing Span\nSpan is an experimental layout editor. It lets you move text around line by line using boxes called\nS P A N S\nYou enter the text below, and then use a set of VIM-inspired keyboard shortcuts to create, delete, move and resize spans.\nText that reaches the end of a span wraps and continues in the next one.\nLine breaks make sure the text goes to a new span.\nYou can cycle through different themes by pressing 't'.\nI made Span to try and imagine what a layout tool would feel like if it did not stick to the \"textarea\" metaphor.\nYou can save what you make as a png to share or JSON to continue editing.\nI'd love to see what you make."
+    'Introducing Span\nSpan is an experimental layout editor. It lets you move text around \nline by line\nusing boxes called\nspans\nYou enter the text below, and then use a set of VIM-inspired keyboard shortcuts to create, delete, move and resize spans.\nText that reaches the end of a span wraps and continues in the next one.\nLine breaks make sure the text goes to a new span.\nYou can cycle through different themes by pressing \'t\'.\nYou can save what you make as a png to share or JSON to continue editing.\nI made Span to try and imagine what a layout tool would feel like if it did not stick to the "textarea" metaphor.'
   state.spans = [
     [2, 1, 11, 1],
-    [32, 1, 4, 1],
+    [15, 1, 4, 1],
     [2, 3, 38, 1],
-    [2, 4, 28, 1],
-    [2, 6, 4, 1],
-    [25, 6, 2, 1],
-    [43, 6, 5, 1],
+    [2, 4, 38, 1],
+    [2, 6, 12, 1],
     [2, 8, 18, 1],
-    [23, 8, 9, 1],
+    [22, 8, 5, 1],
     [2, 10, 38, 1],
     [2, 11, 38, 1],
     [2, 12, 38, 1],
     [2, 13, 38, 1],
-    [43, 10, 35, 1],
-    [43, 11, 35, 1],
-    [43, 12, 35, 1],
-    [28, 15, 50, 1],
-    [2, 17, 55, 1],
-    [33, 19, 45, 1],
-    [33, 20, 45, 1],
-    [33, 21, 45, 1],
-    [2, 23, 73, 1],
+    [2, 14, 38, 1],
+    [2, 15, 38, 1],
+    [2, 16, 38, 1],
+    [2, 17, 38, 1],
+    [2, 19, 38, 1],
+    [2, 20, 38, 1],
+    [42, 16, 36, 1],
+    [42, 17, 36, 1],
+    [42, 18, 36, 1],
+    [44, 20, 34, 1],
+    [44, 21, 34, 1],
+    [44, 22, 34, 1],
+    [44, 23, 34, 1],
   ]
   state.selected = null
   state.cursor = [0, 0, 1, 1]

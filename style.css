@@ -30,6 +30,7 @@ body {
   font-size: 13.333px;
   line-height: 16px;
   user-select: none;
+  -webkit-text-size-adjust: none;
 }
 body {
   padding-left: 8px;
