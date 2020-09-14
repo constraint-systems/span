@@ -8,16 +8,25 @@
     />
     <link rel="shortcut icon" href="/favicon.png" />
     <!-- social start -->
-  <title>Span</title>
-  <meta name="description" content="Span is a keyboard-driven app that lets you lay out and rearrange
-text, line by line." />
-  <meta name="og:title" content="Span" />
-  <meta name="og:description" content="Span is a keyboard-driven app that lets you lay out and rearrange
-text, line by line." />
-  <meta property="og:image" content="https://span.constraint.systems/span.png">
-  <meta name="og:url" content="https://span.constraint.systems" />
-  <meta name="twitter:card" content="summary_large_image" />
-<!-- social end -->
+    <title>Span</title>
+    <meta
+      name="description"
+      content="Span is a keyboard-driven app that lets you lay out and rearrange
+text, line by line."
+    />
+    <meta name="og:title" content="Span" />
+    <meta
+      name="og:description"
+      content="Span is a keyboard-driven app that lets you lay out and rearrange
+text, line by line."
+    />
+    <meta
+      property="og:image"
+      content="https://span.constraint.systems/span.png"
+    />
+    <meta name="og:url" content="https://span.constraint.systems" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- social end -->
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body class="show-help">
@@ -28,94 +37,208 @@ text, line by line." />
         <div class="space"></div>
         <div></div>
         <!-- instructions start -->
-<div style="user-select: text;">Span is a keyboard-driven app that lets you lay out and rearrange
-text, line by line.</div>
-<div class="hspace"></div>
-<div>
-  Controls - show
-  <span id="vim_selectref" class="display_select active">vim</span>
-  <span id="arrow_selectref" class="display_select">arrows</span>
-</div>
-<div class="hspace"></div>
-<div id="help_layout_moderef">
-  <div>
-    <span>Layout mode</span>
-  </div>
-  <div id="help_freemoveref">
-    <div class="hspace"></div>
-    <div>Freemove</div>
-    <div class="hspace"></div>
-    <div>
-      <button class="instruction" data-trigger="h"><span class="vimbind">h</span><span class="arrowbind">←</span></button><button class="instruction" data-trigger="j"><span class="vimbind">j</span><span class="arrowbind">↓</span></button><button class="instruction" data-trigger="k"><span class="vimbind">k</span><span class="arrowbind">↑</span></button><button class="instruction" data-trigger="l"><span class="vimbind">l</span><span class="arrowbind">→</span></button> - move cursor
-    </div>
-    <div class="qspace"></div>
-    <div><button class="instruction" data-trigger="enter">enter</button> - select or create span</div>
-    <div class="qspace"></div>
-    <div><button class="instruction" data-trigger="backspace">backspace</button> - delete span</div>
-    <div class="hspace"></div>
-    <div><button class="instruction" data-trigger="c">c</button> - clear layout</div>
-    <div class="hspace"></div>
-    <div><button class="instruction" data-trigger="u">u</button> - undo&nbsp;
-    <button class="instruction" data-trigger="r">r</button> - redo</div>
-    <div class="hspace"></div>
-    <div><button class="instruction" data-trigger="e">e</button> - edit text</div>
-  </div>
-  <div id="help_selectedref">
-    <div class="hspace"></div>
-    <div>Selected</div>
-    <div class="hspace"></div>
-    <div><button class="instruction" data-trigger="k"><span class="vimbind">k</span><span class="arrowbind">↑</span></button> - select previous</div>
-    <div class="qspace"></div>
-    <div><button class="instruction" data-trigger="j"><span class="vimbind">j</span><span class="arrowbind">↓</span></button> - select next</div>
-    <div class="qspace"></div>
-    <div><button class="instruction" data-trigger="shift">shift</button> + <button class="instruction" data-trigger="shift k"><span class="vimbind">k</span><span class="arrowbind">↑</span></button> - add previous</div>
-    <div class="qspace"></div>
-    <div><button class="instruction" data-trigger="shift">shift</button> + <button class="instruction" data-trigger="shift j"><span class="vimbind">j</span><span class="arrowbind">↓</span></button> - add next</div>
-    <div class="hspace"></div>
-    <div><button class="instruction" data-trigger="h"><span class="vimbind">h</span><span class="arrowbind">←</span></button> - span end -1</div>
-    <div class="qspace"></div>
-    <div><button class="instruction" data-trigger="l"><span class="vimbind">l</span><span class="arrowbind">→</span></button> - span end +1</div>
-    <div class="qspace"></div>
-    <div><button class="instruction" data-trigger="shift">shift</button> + <button class="instruction" data-trigger="shift h"><span class="vimbind">h</span><span class="arrowbind">←</span></button> - span start +1</div>
-    <div class="qspace"></div>
-    <div><button class="instruction" data-trigger="shift">shift</button> + <button class="instruction" data-trigger="shift l"><span class="vimbind">l</span><span class="arrowbind">→</span></button> - span start -1</div>
-    <div class="hspace"></div>
-    <div><button class="instruction" data-trigger="a">a</button> - toggle attach</div>
-    <div>When attach is on, resizing a span will push and pull any neighbor span.</div>
-    <div class="hspace"></div>
-    <div>
-      <button class="instruction" data-trigger="ctrl">ctrl</button> + <button class="instruction" data-trigger="ctrl h"><span class="vimbind">h</span><span class="arrowbind">←</span></button><button class="instruction" data-trigger="ctrl j"><span class="vimbind">j</span><span class="arrowbind">↓</span></button><button class="instruction" data-trigger="ctrl k"><span class="vimbind">k</span><span class="arrowbind">↑</span></button><button class="instruction" data-trigger="ctrl l"><span class="vimbind">l</span><span class="arrowbind">→</span></button> - move spans
-    </div>
-    <div class="hspace"></div>
-    <div><button class="instruction" data-trigger="backspace">backspace</button> - delete spans</div>
-    <div class="qspace"></div>
-    <div><button class="instruction" data-trigger="escape">escape</button> - exit to freemove</div>
-    <div class="hspace"></div>
-    <div><button class="instruction" data-trigger="u">u</button> - undo&nbsp;
-    <button class="instruction" data-trigger="r">r</button> - redo</div>
-    <div class="hspace"></div>
-    <div><button class="instruction" data-trigger="e">e</button> - edit text</div>
-  </div>
-  <div>
-    <div class="space"></div>
-    <div>Themes</div>
-    <div class="hspace"></div>
-    <div id="theme_holderref"></div>
-    <div class="hspace"></div>
-    <div><button class="instruction" data-trigger="t">t</button> - next theme</div>
-  </div>
-</div>
-<div id="help_text_moderef">
-  <div>
-    <span>Text mode</span>
-  </div>
-  <div class="hspace"></div>
-  <div>use normal text input controls</div>
-  <div class="hspace"></div>
-  <div><button class="instruction" data-trigger="escape">escape</button> - exit to layout mode</div>
-</div>
-<div class="space"></div>
-<!-- instructions end -->
+        <div style="user-select: text;">
+          Span is a keyboard-driven app that lets you lay out and rearrange
+          text, line by line.
+        </div>
+        <div class="hspace"></div>
+        <div>
+          Controls - show
+          <span id="vim_selectref" class="display_select active">vim</span>
+          <span id="arrow_selectref" class="display_select">arrows</span>
+        </div>
+        <div class="hspace"></div>
+        <div id="help_layout_moderef">
+          <div>
+            <span>Layout mode</span>
+          </div>
+          <div id="help_freemoveref">
+            <div class="hspace"></div>
+            <div>Freemove</div>
+            <div class="hspace"></div>
+            <div>
+              <button class="instruction" data-trigger="h">
+                <span class="vimbind">h</span
+                ><span class="arrowbind">←</span></button
+              ><button class="instruction" data-trigger="j">
+                <span class="vimbind">j</span
+                ><span class="arrowbind">↓</span></button
+              ><button class="instruction" data-trigger="k">
+                <span class="vimbind">k</span
+                ><span class="arrowbind">↑</span></button
+              ><button class="instruction" data-trigger="l">
+                <span class="vimbind">l</span><span class="arrowbind">→</span>
+              </button>
+              - move cursor
+            </div>
+            <div class="qspace"></div>
+            <div>
+              <button class="instruction" data-trigger="enter">enter</button> -
+              select or create span
+            </div>
+            <div class="qspace"></div>
+            <div>
+              <button class="instruction" data-trigger="backspace">
+                backspace
+              </button>
+              - delete span
+            </div>
+            <div class="hspace"></div>
+            <div>
+              <button class="instruction" data-trigger="c">c</button> - clear
+              layout
+            </div>
+            <div class="hspace"></div>
+            <div>
+              <button class="instruction" data-trigger="u">u</button> -
+              undo&nbsp;
+              <button class="instruction" data-trigger="r">r</button> - redo
+            </div>
+            <div class="hspace"></div>
+            <div>
+              <button class="instruction" data-trigger="e">e</button> - edit
+              text
+            </div>
+          </div>
+          <div id="help_selectedref">
+            <div class="hspace"></div>
+            <div>Selected</div>
+            <div class="hspace"></div>
+            <div>
+              <button class="instruction" data-trigger="k">
+                <span class="vimbind">k</span><span class="arrowbind">↑</span>
+              </button>
+              - select previous
+            </div>
+            <div class="qspace"></div>
+            <div>
+              <button class="instruction" data-trigger="j">
+                <span class="vimbind">j</span><span class="arrowbind">↓</span>
+              </button>
+              - select next
+            </div>
+            <div class="qspace"></div>
+            <div>
+              <button class="instruction" data-trigger="shift">shift</button> +
+              <button class="instruction" data-trigger="shift k">
+                <span class="vimbind">k</span><span class="arrowbind">↑</span>
+              </button>
+              - add previous
+            </div>
+            <div class="qspace"></div>
+            <div>
+              <button class="instruction" data-trigger="shift">shift</button> +
+              <button class="instruction" data-trigger="shift j">
+                <span class="vimbind">j</span><span class="arrowbind">↓</span>
+              </button>
+              - add next
+            </div>
+            <div class="hspace"></div>
+            <div>
+              <button class="instruction" data-trigger="h">
+                <span class="vimbind">h</span><span class="arrowbind">←</span>
+              </button>
+              - span end -1
+            </div>
+            <div class="qspace"></div>
+            <div>
+              <button class="instruction" data-trigger="l">
+                <span class="vimbind">l</span><span class="arrowbind">→</span>
+              </button>
+              - span end +1
+            </div>
+            <div class="qspace"></div>
+            <div>
+              <button class="instruction" data-trigger="shift">shift</button> +
+              <button class="instruction" data-trigger="shift h">
+                <span class="vimbind">h</span><span class="arrowbind">←</span>
+              </button>
+              - span start +1
+            </div>
+            <div class="qspace"></div>
+            <div>
+              <button class="instruction" data-trigger="shift">shift</button> +
+              <button class="instruction" data-trigger="shift l">
+                <span class="vimbind">l</span><span class="arrowbind">→</span>
+              </button>
+              - span start -1
+            </div>
+            <div class="hspace"></div>
+            <div>
+              <button class="instruction" data-trigger="a">a</button> - toggle
+              attach
+            </div>
+            <div>
+              When attach is on, resizing a span will push and pull any neighbor
+              span.
+            </div>
+            <div class="hspace"></div>
+            <div>
+              <button class="instruction" data-trigger="ctrl">ctrl</button> +
+              <button class="instruction" data-trigger="ctrl h">
+                <span class="vimbind">h</span
+                ><span class="arrowbind">←</span></button
+              ><button class="instruction" data-trigger="ctrl j">
+                <span class="vimbind">j</span
+                ><span class="arrowbind">↓</span></button
+              ><button class="instruction" data-trigger="ctrl k">
+                <span class="vimbind">k</span
+                ><span class="arrowbind">↑</span></button
+              ><button class="instruction" data-trigger="ctrl l">
+                <span class="vimbind">l</span><span class="arrowbind">→</span>
+              </button>
+              - move spans
+            </div>
+            <div class="hspace"></div>
+            <div>
+              <button class="instruction" data-trigger="backspace">
+                backspace
+              </button>
+              - delete spans
+            </div>
+            <div class="qspace"></div>
+            <div>
+              <button class="instruction" data-trigger="escape">escape</button>
+              - exit to freemove
+            </div>
+            <div class="hspace"></div>
+            <div>
+              <button class="instruction" data-trigger="u">u</button> -
+              undo&nbsp;
+              <button class="instruction" data-trigger="r">r</button> - redo
+            </div>
+            <div class="hspace"></div>
+            <div>
+              <button class="instruction" data-trigger="e">e</button> - edit
+              text
+            </div>
+          </div>
+          <div>
+            <div class="space"></div>
+            <div>Themes</div>
+            <div class="hspace"></div>
+            <div id="theme_holderref"></div>
+            <div class="hspace"></div>
+            <div>
+              <button class="instruction" data-trigger="t">t</button> - next
+              theme
+            </div>
+          </div>
+        </div>
+        <div id="help_text_moderef">
+          <div>
+            <span>Text mode</span>
+          </div>
+          <div class="hspace"></div>
+          <div>use normal text input controls</div>
+          <div class="hspace"></div>
+          <div>
+            <button class="instruction" data-trigger="escape">escape</button> -
+            exit to layout mode
+          </div>
+        </div>
+        <div class="space"></div>
+        <!-- instructions end -->
       </div>
     </div>
 
@@ -126,9 +249,11 @@ text, line by line.</div>
     <div class="space"></div>
     <div class="container">
       <div>
-        <button class="instruction" data-trigger="p">p</button> save as png&nbsp; <button class="instruction" data-trigger="w">w</button> save as
-        JSON&nbsp; <button class="instruction" data-trigger="o">o</button> load JSON&nbsp; <button class="instruction" data-trigger="?">?</button> toggle
-        help
+        <button class="instruction" data-trigger="p">p</button> save as
+        png&nbsp; <button class="instruction" data-trigger="w">w</button> save
+        as JSON&nbsp;
+        <button class="instruction" data-trigger="o">o</button> load JSON&nbsp;
+        <button class="instruction" data-trigger="?">?</button> toggle help
       </div>
     </div>
     <div class="space"></div>
@@ -163,7 +288,12 @@ text, line by line.</div>
         >
       </div>
       <div>
-        <a target="_blank" href="https://github.com/constraint-systems/span"
+        <a target="_blank" href="https://www.youtube.com/watch?v=ltI0e420wbM"
+          >video walkthrough</a
+        >
+        &nbsp;<a
+          target="_blank"
+          href="https://github.com/constraint-systems/span"
           >view source</a
         >
       </div>
